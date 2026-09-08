@@ -8,12 +8,37 @@
 <body>
     <section class="barra">
         <article class="buscador">
-            <div class="cajablanca">
-            </div>
         </article>
+        <article class="cajablanca"></article>
     </section>
     <main class="supercaja">
-    <section class="columnaizq"></section>
+    <section class="columnaizq">
+        <div class="cositorojo">Holaaaaaaaaaaaaaaaa</div>
+        <div class="descripcion">akdmjaklfjhaskdfhasdjk</div>
+        <article class="video">
+            <span class="play"></span>
+        </article>
+        <section class="parteabajo hiper">
+        <article class="imagenabajo"></article>
+            <p class="info"></p>
+            <p class="info"></p>
+            <p class="info"></p>
+            <p class="infor"></p>
+        
+    
+        <article class="imagenabajo"></article>
+            <p class="info"></p>
+            <p class="info"></p>
+            <p class="info"></p>
+            <p class="infor"></p>
+    
+        <article class="imagenabajo"></article>
+        <p class="info"></p>
+        <p class="info"></p>
+        <p class="info"></p>
+        <p class="infor"></p>
+    </section>
+    </section>
     <section class="columnader"></section>
 </main>
 </body>
@@ -39,13 +64,16 @@
     }
     .buscador {
         width: 50%;
-        height: 60%;
+        height: 50%;
         background-color: white;
+        margin: 1rem;
     }
     .cajablanca {
-        width: 10%;
-        height: 100%;
-        background-color: black;
+        width: 5%;
+        height: 50%;
+        background-color: white;
+        margin-top: 1rem;
+    
     }
     .supercaja {
         display: flex;
@@ -54,13 +82,50 @@
     }
 
     .columnaizq {
-        width: 50%;
+        width: 60%;
         height: 90vh;
-        background-color: grey;
+        background-color: rgb(218, 217, 217);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .video {
+        width: 100%;
+        height: 50%;
+        background-color: rgb(78, 78, 78);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .play {
+        background-color: white;
+        width: 10%;
+        height: 20%;
+    }
+    .parteabajo {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .imagenabajo {
+        background-color: aquamarine;
+        width: 8vw;
+        height: 8vh;
+        margin-left: 2rem;
+    }
+    .info {
+width: 30vw;
+height: 1vh;
+background-color: black;
+flex-wrap: wrap-reverse;
     }
 .columnader {
     width: 30%;
     height: 90vh;
-    background-color: aqua;
+    background-color: rgb(181, 182, 182);
 }
 </style>
