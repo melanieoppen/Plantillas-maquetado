@@ -13,30 +13,45 @@
     </section>
     <main class="supercaja">
     <section class="columnaizq">
-        <div class="cositorojo">Holaaaaaaaaaaaaaaaa</div>
-        <div class="descripcion">akdmjaklfjhaskdfhasdjk</div>
+        <article class="arribita">
+        <figure class="cositorojo"></figure>
+        <div class="texto">
+        <p class="descripcion"></p>
+        <p class="descripcion"></p>
+        <p class="descripciona"></p>
+    </div>
+    </article>
         <article class="video">
             <span class="play"></span>
         </article>
-        <section class="parteabajo hiper">
+        <section class="parteabajo">
+            <div class="elemento">
         <article class="imagenabajo"></article>
+        <figure class="informacion">
+        <p class="info"></p>
+            <p class="info"></p>
+            <p class="info"></p>
+            <p class="infor"></p>
+        </figure>
+        </div>
+        <div class="elemento">
+        <article class="imagenabajo"></article>
+        <figure class="informacion">
             <p class="info"></p>
             <p class="info"></p>
             <p class="info"></p>
             <p class="infor"></p>
-        
-    
+        </figure>
+        </div>
+        <div class="elemento">
         <article class="imagenabajo"></article>
-            <p class="info"></p>
-            <p class="info"></p>
-            <p class="info"></p>
-            <p class="infor"></p>
-    
-        <article class="imagenabajo"></article>
+        <figure class="informacion">
         <p class="info"></p>
         <p class="info"></p>
         <p class="info"></p>
         <p class="infor"></p>
+    </figure>
+    </div>
     </section>
     </section>
     <section class="columnader"></section>
@@ -90,6 +105,41 @@
         justify-content: space-around;
         align-items: flex-start;
     }
+    .arribita {
+    width: 80%;
+    min-height: 12vh;
+    margin-left: 2rem;
+    display: flex; /* Asegura que los elementos se alineen */
+    flex-direction: column; /* Coloca los elementos en columna */
+    gap: 0.5rem; /* Espaciado entre elementos */
+}
+
+.arribita > * {
+    align-self: flex-start; /* Asegura que todos los elementos comiencen en el mismo lugar */
+}
+    .cositorojo {
+        width: 45%;
+        height: 2vh;
+        background-color: rgb(241, 110, 110);
+        margin-top: 1rem;
+    }
+    .texto {
+        width: 80%;
+        height: 4vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+    }
+    .descripcion {
+        width: 90%;
+        height: 0.5vh;
+        background-color: rgb(78, 78, 78);
+    }
+    .descripciona {
+        width: 60%;
+        height: 0.5vh;
+        background-color: rgb(78, 78, 78);
+    }
     .video {
         width: 100%;
         height: 50%;
@@ -107,21 +157,40 @@
         width: 100%;
         height: 40%;
         display: flex;
-        justify-content: center;
+        flex-direction:column;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+    .elemento {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .informacion {
+        width: 70%;
+        height: 7vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: balance;;
+
     }
     .imagenabajo {
         background-color: aquamarine;
         width: 8vw;
-        height: 8vh;
+        height: 9vh;
         margin-left: 2rem;
     }
     .info {
 width: 30vw;
-height: 1vh;
+height: 0.5vh;
 background-color: black;
-flex-wrap: wrap-reverse;
+    }
+    .infor {
+        width: 20vw;
+        height: 0.5vh;
+        background-color: black;
     }
 .columnader {
     width: 30%;
