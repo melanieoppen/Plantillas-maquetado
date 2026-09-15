@@ -54,7 +54,43 @@
     </div>
     </section>
     </section>
-    <section class="columnader"></section>
+    <section class="columnader">
+        <article class="elementolista">
+            <figure class="foto"></figure>
+            <div class="txt">
+            <h1 class="titulo"></h1>
+            <p class="parrafito"></p>
+        </div>
+        </article>
+        <article class="elementolista">
+            <figure class="foto"></figure>
+            <div class="txt">
+            <h1 class="titulo"></h1>
+            <p class="parrafito"></p>
+        </div>
+        </article>
+        <article class="elementolista">
+            <figure class="foto"></figure>
+            <div class="txt">
+            <h1 class="titulo"></h1>
+            <p class="parrafito"></p>
+        </div>           
+        </article>
+        <article class="elementolista">
+            <figure class="foto"></figure>
+            <div class="txt">
+            <h1 class="titulo"></h1>
+            <p class="parrafito"></p>
+        </div>
+        </article>
+        <article class="elementolista">
+            <figure class="foto"></figure>
+            <div class="txt">
+            <h1 class="titulo"></h1>
+            <p class="parrafito"></p>
+        </div>
+        </article>
+    </section>
 </main>
 </body>
 </html>
@@ -99,19 +135,21 @@
     .columnaizq {
         width: 60%;
         height: 90vh;
-        background-color: rgb(218, 217, 217);
+        background-color: rgb(233, 231, 231);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
     }
     .arribita {
-    width: 80%;
+    width: 100%;
     min-height: 12vh;
     margin-left: 2rem;
+    margin-right:2rem;
     display: flex; /* Asegura que los elementos se alineen */
     flex-direction: column; /* Coloca los elementos en columna */
-    gap: 0.5rem; /* Espaciado entre elementos */
+    align-items: center;
+    gap: 1rem; /* Espaciado entre elementos */
 }
 
 .arribita > * {
@@ -129,16 +167,17 @@
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+align-items: center;
     }
     .descripcion {
-        width: 90%;
+        width: 100%;
         height: 0.5vh;
-        background-color: rgb(78, 78, 78);
+        background-color:  rgb(181, 182, 182);
     }
     .descripciona {
-        width: 60%;
+        width: 70%;
         height: 0.5vh;
-        background-color: rgb(78, 78, 78);
+        background-color:  rgb(181, 182, 182);
     }
     .video {
         width: 100%;
@@ -174,7 +213,7 @@ justify-content: space-between;
         align-items: center;
         flex-wrap: balance;;
         gap: 0.4rem;
-        padding-left: 0.7rem;
+        padding-left: 1rem;
 
     }
     .imagenabajo {
@@ -187,16 +226,49 @@ justify-content: space-between;
     .info {
 width: 30vw;
 height: 0.5vh;
-background-color: black;
+background-color:  rgb(181, 182, 182);
     }
     .infor {
         width: 20vw;
         height: 0.5vh;
-        background-color: black;
+        background-color:  rgb(181, 182, 182);
     }
 .columnader {
     width: 30%;
     height: 90vh;
     background-color: rgb(181, 182, 182);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.elementolista {
+    width: 85%;
+    height: 9vh;
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+}
+.foto {
+    width: 55%;
+    height: 100%;
+    background-color: rgb(95, 95, 95);
+}
+.txt {
+    width: 35%;
+    height: 9vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titulo {
+    width: 100%;
+    height: 2vh;
+    background-color: black;
+}
+.parrafito {
+    width: 100%;
+    height: 0.5vh;
+    background-color: black;   
 }
 </style>
